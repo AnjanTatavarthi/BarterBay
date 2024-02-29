@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router-dom";
+// Pages
+import LoginPage from "./pages/LoginPage.jsx";
+import SignupPage from "./pages/SignupPage.jsx";
+
 function App() {
 
     return (
         <>
-            <div>
-                BarterBay
-            </div>
+            <Routes>
+                    <Route  path="/signup" element={<SignupPage />} />
+                    <Route  path="/login" element={<LoginPage />} />
+            </Routes>
         </>
     )
 }
